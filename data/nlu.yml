@@ -1,0 +1,201 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thanks
+
+
+
+
+- intent: intent_symptom
+  examples: |
+    - i have symptomes
+    - syptom
+    - symptoms
+    - I have [Latex allergy](symptom)
+    - [Shellfish allergy](symptom)
+    - [Allergy to mould](symptom)
+    - [Dander (animal) allergy](symptom)
+    - [ Allergy to grass pollen](symptom)
+    - [Allergy to soya](symptom)
+    - [Allergy to fish](symptom)
+    - [House dust mite allergy](symptom)
+    - [Allergy to tree pollen](symptom)
+    - [Sitka](city)
+    - [Juneau](city)
+    - [Virginia](city)
+    - [Cusseta](city)
+    - [Chicago](city)
+    - [Tucson](city)
+    - [Columbus](city)
+    - [Valdez](city)
+    - [Preston](city)
+    - [Huntsville](city)
+    - [Boulder](city)
+    - [California](city)
+    - [Tulsa](city)
+    - [Colorado](city)
+    - [Goodyear](city)
+    - [Albuquerque](city)
+    - [Scottsdale](city)
+    - [Hibbing](city)
+    - [Norman](city)
+    - [San](city)
+    - [Peoria](city)
+    - [New](city)
+    - [Corpus](city)
+    - [Montgomery](city)
+    - [Wichita](city)
+    - [Aurora](city)
+    - [Denver](city)
+    - [Sierra](city)
+    - [Georgetown](city)
+    - [Birmingham](city)
+    - [Fayetteville](city)
+    - [Carson](city)
+    - [Raleigh](city)
+    - [Bakersfield](city)
+    - [Mobile](city)
+    - [Detroit](city)
+    - [Bunnell](city)
+    - [Chattanooga](city)
+    - [Mesa](city)
+    - [Fernley](city)
+    - [Marana](city)
+    - [Yuma](city)
+    - [Little](city)
+    - [Athens](city)
+    - [Hartsville](city)
+    - [Port](city)
+    - [Tampa](city)
+    - [Fresno](city)
+    - [Unalaska](city)
+    - [Eloy](city)
+    - [Salt](city)
+    - [Jackson](city)
+    - [Fort](city)
+    - [Casa](city)
+    - [Charleston](city)
+    - [Henderson](city)
+    - [Durham](city)
+    - [Abilene](city)
+    - [Palmdale](city)
+    - [Babbitt](city)
+    - [Surprise](city)
+    - [Cape](city)
+    - [Shreveport](city)
+    - [Rio](city)
+    - [Savannah](city)
+    - [Reno](city)
+    - [Orlando](city)
+    - [North](city)
+    - [Tallahassee](city)
+    - [Amarillo](city)
+    - [St](city)
+    - [Knoxville](city)
+    - [Sacramento](city)
+    - [Clarksville](city)
+    - [Los Angeles](city)
+    - [New York](city)
+    - [Las Vegas](city)
+    - [San Diego](city)
+    - [San Antonio](city)
+    - [El Paso](city)
+    - [Kansas city](city)
+    - [San Francisco](city)
+    - [Santa Barbara](city)
+    
+  
+- intent: book_appointment
+  examples: |
+    - i want to sign-up
+
+  
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,29 @@
+version: "2.0"
+
+stories:
+
+# - story: finding clothes
+#   steps:
+#   - intent: greet
+#   - action: utter_how_can_i_help
+#   - intent: find_clothes
+#     entities:
+#       - typeOf: "clothes"
+#       - category: "men"
+#   - action: utter_ask_types
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+
+# - story: finding clothes  + ask category
+#   steps:
+#   - intent: greet
+#   - action: utter_how_can_i_help
+#   - intent: find_clothes
+#     entities:
+#     - typeOf: "clothes"
+#   - action: utter_ask_category
+  
+
+    
+

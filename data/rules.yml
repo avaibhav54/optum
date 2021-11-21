@@ -1,0 +1,62 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+
+- rule: show symptom
+  steps:
+  - intent: intent_symptom
+  - action: symptoms_form
+  - active_loop: symptoms_form
+
+- rule: Submit form bill payment
+  condition:
+  # Condition that form is active.
+  - active_loop: symptoms_form
+  steps:
+  # Form is deactivated
+  - action: symptoms_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: action_submit
+  - action: action_symptom
+  - action: action_listen
+
+  
+- rule: book appointment
+  steps:
+  - intent: book_appointment
+  - action: appointment_form
+  - active_loop: appointment_form
+
+- rule: Submit form bill payment
+  condition:
+  # Condition that form is active.
+  - active_loop: appointment_form
+  steps:
+  # Form is deactivated
+  - action: appointment_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: action_submit
+  - action: action_appointment
+  - action: action_listen
+
+  
+
+
